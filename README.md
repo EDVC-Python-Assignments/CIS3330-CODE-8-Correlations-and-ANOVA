@@ -4,18 +4,18 @@
 
 ## Useful Python Code
 * Import statsmodels formula api to execute an ANOVA analysis
-`import statsmodels.formula.api as sm_api`
+  * `import statsmodels.formula.api as sm_api`
 * Use a code similar to the one below for executing an ANOVA analysis
-`model = sm_api.ols('Varible ~ C(Groups)', data=df).fit()`
-`anova_table = sm.stats.anova_lm(model, typ=2)`
-`print(anova_table)`
+  * `model = sm_api.ols('Varible ~ C(Groups)', data=df).fit()`
+  * `anova_table = sm.stats.anova_lm(model, typ=2)`
+  * `print(anova_table)`
 * Import the graphics api from statsmodels to create a correlation matrix visualization
-`import statsmodels.graphics.api as smg`
+  * `import statsmodels.graphics.api as smg`
 * Use a code similar to the the one below to create your correlation matrix visualization
-`df_num = df.select_dtypes(['number'])`
-`corr_matrix = np.corrcoef(df_num.T)`
-`smg.plot_corr(corr_matrix, xnames=df_num.columns)`
-`plt.show()`
+  * `df_num = df.select_dtypes(['number'])`
+  * `corr_matrix = np.corrcoef(df_num.T)`
+  * `smg.plot_corr(corr_matrix, xnames=df_num.columns)`
+  * `plt.show()`
 ## Data sources and documentation
 
 * **coffee.csv**

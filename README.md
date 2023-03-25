@@ -9,6 +9,9 @@
   * `model = sm_api.ols('Varible ~ C(Groups)', data=df).fit()`
   * `anova_table = sm.stats.anova_lm(model, typ=2)`
   * `print(anova_table)`
+* Boxplot - Useful to visualize groups that you analyize using ANOVA
+  * `.boxplot(column="COLUMN",by="GROUPS")`
+  * `plt.show()`
 * Import the graphics api from statsmodels to create a correlation matrix visualization
   * `import statsmodels.graphics.api as smg`
 * Use a code similar to the the one below to create your correlation matrix visualization

@@ -2,6 +2,16 @@
 
 ## Instructions
 
+In this coding assignment you are asked to complete two things:
+
+1. Correlation matrix for the datasets **Flight_Delays_2018.csv** and **coffee.csv**. 
+2. Conduct ANOVA analysis on the **coffee.csv** for a subset of coffee "Location_Country" that are not significantly different and one subset of data that are significantly different
+
+## Deliverables
+
+* Submit all your code in the code repository
+* Submit the results and visualizations of your analysis on a word document in the code repository and blackboard
+
 ## Useful Python Code
 * Import statsmodels formula api to execute an ANOVA analysis
   * `import statsmodels.formula.api as sm_api`
@@ -18,6 +28,11 @@
   * `df_num = df.select_dtypes(['number'])`
   * `corr_matrix = np.corrcoef(df_num.T)`
   * `smg.plot_corr(corr_matrix, xnames=df_num.columns)`
+  * `plt.show()`
+* Import seaborn to create a correlation matrix
+  * `import seaborn as sns`
+* Use a code similar to the one below to create your correlation matrix visualization
+  * `sns.heatmap(df.corr().round(2))`
   * `plt.show()`
 ## Data sources and documentation
 

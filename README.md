@@ -2,10 +2,10 @@
 
 ## Instructions
 
-In this coding assignment you are asked to complete two things:
+In this coding assignment, you are asked to complete two things:
 
 1. Correlation matrix for the datasets **Flight_Delays_2018.csv** and **coffee.csv**. 
-2. Conduct ANOVA analysis on the **coffee.csv** for a subset of coffee "Location_Country" that are not significantly different and one subset of data that are significantly different
+2. Conduct ANOVA analysis on the **coffee.csv** for a subset of coffee "Location_Country" that are not significantly different and one subset of data that is significantly different
 
 ## Deliverables
 
